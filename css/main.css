@@ -1,0 +1,43 @@
+/* header */
+
+header {
+  background-color: #3a3a3a;
+}
+
+header .inner {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+header ul.menu {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul.menu li {
+  display: flex;
+}
+
+header li.apple-logo {
+}
+
+header li.search-logo {
+}
+
+header li.basket-logo {
+}
+
+header ul.menu a {
+  padding: 0 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  opacity: 0.8;
+}
+
+header ul.menu a:hover {
+  opacity: 1;
+}
