@@ -10,22 +10,26 @@ header .inner {
 }
 
 header ul.menu {
-  height: 44px;
   display: flex;
   justify-content: space-between;
+  height: 44px;
 }
 
 header ul.menu > li {
   display: flex;
 }
 
+header li.basket-logo {
+  position: relative;
+}
+
 header li.apple-logo > a,
 header li.search-logo > a,
 header li.basket-logo > a {
   width: 14px;
-  text-indent: -9999px;
   background-repeat: no-repeat;
   background-position: center 13px;
+  text-indent: -9999px;
 }
 
 header li.apple-logo > a {
@@ -38,14 +42,13 @@ header li.search-logo > a {
 
 header li.basket-logo > a {
   background-image: url("../images/header_bag.svg");
-  position: relative;
 }
 
 header ul.menu > li > a {
-  padding: 0 10px;
-  font-size: 12px;
   display: flex;
   align-items: center;
+  padding: 0 10px;
+  font-size: 12px;
   text-decoration: none;
   color: aliceblue;
   opacity: 0.8;
@@ -55,25 +58,67 @@ header ul.menu > a:hover {
   opacity: 1;
 }
 
-header li.basket-logo .basket {
+header .basket {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: -6px;
   width: 290px;
   padding: 10px 20px;
   border: 1px solid #d2d2d2;
   border-radius: 10px;
   background-color: #fff;
-  box-sizing: border-box;
+}
+
+header .basket.show {
+  display: block;
+}
+
+header .basket .arrow {
   position: absolute;
-  top: 100%;
+  overflow: hidden;
+  top: -10px;
+  right: 12px;
+  width: 20px;
+  height: 10px;
+}
+
+header .basket .arrow:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
 }
 
 header .basket .message {
+  text-align: center;
+  padding: 30px 0;
+  color: #6e6e6e;
+  font-size: 13px;
 }
 
 header .basket ul {
+  margin-top: 10px;
 }
 
 header .basket ul li {
+  border-top: 1px solid #d2d2d2;
 }
 
 header .basket ul li a {
+  display: block;
+  padding: 14px;
+  font-size: 13px;
+  color: #0071e3;
+}
+
+header .basket ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
