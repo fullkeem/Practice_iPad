@@ -132,6 +132,7 @@ header .search-wrap {
   top: 0;
   left: 0;
   width: 100%;
+  display: none;
 }
 
 header .search {
@@ -232,4 +233,7 @@ header .search .autocompletes ul li:hover a {
 
 header.searching ul.menu > li {
   display: none;
+}
+header.searching .search-wrap {
+  display: block;
 }

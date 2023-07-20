@@ -1,6 +1,7 @@
 const basketLogoEl = document.querySelector("header .basket-logo");
 const basketEl = basketLogoEl.querySelector(".basket");
 
+// 장바구니
 function showBasket() {
   basketEl.classList.add("show");
 }
@@ -26,3 +27,23 @@ basketEl.addEventListener("click", function (event) {
 window.addEventListener("click", function () {
   hideBasket();
 });
+
+// 검색
+
+const headerEl = document.querySelector("header");
+const searchWrapEl = headerEl.querySelector(".search-wrap");
+const searchStarterEl = headerEl.querySelector(".search-logo");
+const searchCloserEl = headerEl.querySelector(".search-closer");
+const searchShadowEl = headerEl.querySelector(".shadow");
+
+function showSearch() {
+  headerEl.classList.add("searching");
+}
+
+function hideSearch() {
+  headerEl.classList.remove("searching");
+}
+
+searchStarterEl.addEventListener("click", showSearch);
+searchCloserEl.addEventListener("click", hideSearch);
+searchShadowEl.addEventListener("click", hideSearch);
