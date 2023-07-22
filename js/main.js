@@ -38,12 +38,19 @@ const searchShadowEl = headerEl.querySelector(".shadow");
 
 function showSearch() {
   headerEl.classList.add("searching");
+  document.documentElement.classList.add("fixed");
 }
 
 function hideSearch() {
   headerEl.classList.remove("searching");
+  document.documentElement.classList.remove("fixed");
 }
 
 searchStarterEl.addEventListener("click", showSearch);
 searchCloserEl.addEventListener("click", hideSearch);
 searchShadowEl.addEventListener("click", hideSearch);
+
+function scrollStop() {
+  if ("searching") {
+  }
+}

@@ -1,4 +1,11 @@
+html.fixed {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
 body {
+  height: 10000px;
   box-sizing: border-box;
   color: #1d1d1d;
   font-size: 16px;
