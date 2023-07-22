@@ -31,26 +31,36 @@ window.addEventListener("click", function () {
 // 검색
 
 const headerEl = document.querySelector("header");
+const headerMenuEls = [...headerEl.querySelectorAll("ul.menu > li")];
 const searchWrapEl = headerEl.querySelector(".search-wrap");
 const searchStarterEl = headerEl.querySelector(".search-logo");
 const searchCloserEl = headerEl.querySelector(".search-closer");
 const searchShadowEl = headerEl.querySelector(".shadow");
+const searchDelayEl = [...searchWrapEl.querySelectorAll("li")];
 
 function showSearch() {
   headerEl.classList.add("searching");
   document.documentElement.classList.add("fixed");
+  headerMenuEls.reverse().forEach(function (el, index) {
+    el.style.transitionDelay = (index * 0.3) / headerMenuEls.length + "s";
+  });
+  searchDelayEl.forEach(function (el, index) {
+    el.style.transitionDelay = (index * 0.3) / searchDelayEl.length + "s";
+  });
 }
 
 function hideSearch() {
   headerEl.classList.remove("searching");
   document.documentElement.classList.remove("fixed");
+  headerMenuEls.reverse().forEach(function (el, index) {
+    el.style.transitionDelay = (index * 0.3) / headerMenuEls.length + "s";
+  });
+  searchDelayEl.reverse().forEach(function (el, index) {
+    el.style.transitionDelay = (index * 0.3) / searchDelayEl.length + "s";
+  });
+  searchDelayEl.reverse();
 }
 
 searchStarterEl.addEventListener("click", showSearch);
 searchCloserEl.addEventListener("click", hideSearch);
 searchShadowEl.addEventListener("click", hideSearch);
-
-function scrollStop() {
-  if ("searching") {
-  }
-}
