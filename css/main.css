@@ -216,12 +216,6 @@ header .search .autocompletes h3 {
   color: #6e6e6e;
 }
 
-header .search .autocompletes ul {
-}
-
-header .search .autocompletes ul li {
-}
-
 header .search .autocompletes ul li a {
   display: block;
   margin: 0 -14px;
