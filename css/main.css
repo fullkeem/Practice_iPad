@@ -5,9 +5,7 @@ header {
 }
 
 header .inner {
-  position: relative;
   max-width: 1020px;
-  margin: 0 auto;
 }
 
 header ul.menu {
@@ -271,7 +269,6 @@ nav .inner {
   align-items: center;
   max-width: 1000px;
   height: 52px;
-  margin: 0 auto;
 }
 
 nav h1 {
@@ -303,4 +300,53 @@ nav .menu li.active a {
 
 nav .menu li.active:hover a {
   color: #1d1d1d;
+}
+
+/* hero */
+.hero {
+  background-color: #f5f5f5;
+}
+
+.hero .inner {
+  padding-bottom: 110px;
+}
+
+.hero h1 {
+  width: 221px;
+  height: 91px;
+  background-image: url("../images/hero_ipad_text.png");
+}
+
+.hero figure {
+}
+
+.hero figure img {
+}
+
+.hero figure figcaption {
+}
+
+.hero figure figcaption .caption-camera {
+}
+
+.hero figure figcaption .caption-chip {
+}
+
+.hero figure figcaption .caption-storage {
+}
+
+.hero h2 {
+  width: 738px;
+  height: 145px;
+  margin: 0 auto;
+  background-image: url("../images/hero_headline.png");
+}
+
+.hero p.pricing {
+}
+
+.hero p.description {
+}
+
+.hero .links {
 }

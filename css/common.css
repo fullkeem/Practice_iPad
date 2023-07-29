@@ -19,6 +19,21 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* inner */
+.inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Btn */
 .btn {
   display: flex;
   justify-content: center;
@@ -41,4 +56,13 @@ a {
 
 .btn:focus {
   box-shadow: 0 0 0 3px #81b9f1;
+}
+
+/* Background image text */
+.bgtext {
+  display: block;
+  text-indent: -9999px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
