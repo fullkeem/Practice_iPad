@@ -25,6 +25,10 @@ img {
   -webkit-user-drag: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* inner */
 .inner {
   max-width: 980px;
@@ -65,4 +69,39 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/* Links */
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+a.link {
+  color: #0071e3;
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}
+
+a.link::after {
+  content: " >";
+}
+
+/* Figures */
+.figures {
+  position: relative;
+}
+
+.figures figure,
+.figures figcaption,
+.figures figcaption * {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
