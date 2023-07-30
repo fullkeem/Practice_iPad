@@ -1,3 +1,18 @@
+html {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-font: #1d1d1d;
+  --color-font-darkgray: #6e6e6e;
+  --color-font-middlegray: #b7b7b7;
+  --color-font-lightgray: #f5f5f5;
+  --color-link: #0071e3;
+  --color-link-focus: #81b9f1;
+  --color-border: #d2d2d2;
+  --color-header: #3a3a3a;
+  --color-section: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+
 html.fixed {
   position: fixed;
   overflow-y: scroll;
@@ -7,7 +22,7 @@ html.fixed {
 body {
   height: 10000px;
   box-sizing: border-box;
-  color: #1d1d1d;
+  color: var(--color-black);
   font-size: 16px;
   line-height: 1;
   font-family: "Roboto", "Noto Sans KR", sans-serif;
@@ -15,7 +30,7 @@ body {
 }
 
 a {
-  color: #1d1d1d;
+  color: var(--color-black);
   text-decoration: none;
 }
 
@@ -49,8 +64,8 @@ p {
   outline: none;
   font-size: 11px;
   line-height: 1;
-  color: #fff;
-  background-color: #0071e3;
+  color: var(--color-white);
+  background-color: var(--color-link);
   cursor: pointer;
 }
 
@@ -59,7 +74,7 @@ p {
 }
 
 .btn:focus {
-  box-shadow: 0 0 0 3px #81b9f1;
+  box-shadow: 0 0 0 3px var(--color-link-focus);
 }
 
 /* Background image text */
@@ -80,7 +95,7 @@ p {
 }
 
 a.link {
-  color: #0071e3;
+  color: var(--color-link);
   font-size: 19px;
   line-height: 1.3;
 }
