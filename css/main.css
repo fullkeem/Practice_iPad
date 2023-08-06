@@ -403,25 +403,39 @@ nav .menu li.active:hover a {
 }
 
 .power .arcade {
+  margin-top: 55px;
 }
 
 .power .arcade .figures {
+  height: 600px;
 }
 
 .power .arcade figure {
+  transform: translate(-347px, -90px);
 }
 
 .power .arcade figure figcaption {
+  width: 150px;
+  height: 77px;
+  background-image: url("../imagse/power_arcade_caption.png");
+  transform: translate(483px, 653px);
 }
 
 .power .create {
+  margin-top: 55px;
 }
 
 .power .create .figures {
+  height: 772px;
 }
 
 .power .create figure {
+  transform: translate(-25px, 50px);
 }
 
-.power .create figure figcaption {
+.power .create figcaption {
+  width: 162px;
+  height: 66px;
+  background-image: url("../images/power_arcade_caption.png");
+  transform: translate(543px, 908px);
 }
