@@ -225,6 +225,12 @@ a.link::after {
   line-height: 1.5;
 }
 
+.info a.link {
+  display: block;
+  margin-top: 44px;
+  font-size: 19.5px;
+}
+
 @keyframes sprite-icon {
   /* 1~10 */
   0.00% {
