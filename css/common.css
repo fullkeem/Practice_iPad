@@ -156,6 +156,10 @@ a.link::after {
   opacity: 1;
 }
 
+.infos--large .info {
+  max-width: 410px;
+}
+
 .info .icon {
   width: 100px;
   height: 100px;
