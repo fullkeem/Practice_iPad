@@ -652,3 +652,30 @@ nav .menu li.active:hover a {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/* iPadOS */
+.ipados {
+  margin-top: 212px;
+}
+
+.ipados h1 {
+  width: 530px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url("../images/ipados_headline.png");
+}
+
+.ipados .infos {
+  margin-top: 44px;
+  align-items: flex-end;
+}
+
+.ipados .figures {
+  height: 782px;
+  display: flex;
+  border: 4px solid;
+}
+
+.ipados .figures > div {
+  border: 4px solid red;
+}
