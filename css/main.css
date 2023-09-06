@@ -673,9 +673,42 @@ nav .menu li.active:hover a {
 .ipados .figures {
   height: 782px;
   display: flex;
-  border: 4px solid;
 }
 
 .ipados .figures > div {
-  border: 4px solid red;
+  position: relative;
+  flex-grow: 1;
+}
+
+.ipados .figure-split-view figure {
+  transform: translate(-205px, -312px);
+}
+
+.ipados .figure-split-view figcaption {
+  width: 163px;
+  height: 53px;
+  background-image: url("../images/ipados_split_view_caption.png");
+  transform: translate(200px, -38px);
+}
+
+.ipados .figure-widgets figure {
+  transform: translate(237px, 43px);
+}
+
+.ipados .figure-widgets figcaption {
+  width: 161px;
+  height: 46px;
+  background-image: url("../images/ipados_widgets_caption.png");
+  transform: translate(257px, 497px);
+}
+
+.ipados .figure-quick-note figure {
+  transform: translate(-625px, 232px);
+}
+
+.ipados .figure-quick-note figcaption {
+  width: 82px;
+  height: 97px;
+  background-image: url("../imagse/ipados_quick_note_caption.png");
+  transform: translate(511px, 470px);
 }
